@@ -1,0 +1,84 @@
+<div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-netlify icon'></i>
+        <div class="logo_name">Components</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a [routerLink]="['/buttons']" routerLinkActive="active">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Buttons</span>
+        </a>
+         <span class="tooltip">Buttons</span>
+      </li>
+      <li>
+       <a [routerLink]="['/cards']" routerLinkActive="active">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Cards</span>
+       </a>
+       <span class="tooltip">Cards</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Accordions</span>
+       </a>
+       <span class="tooltip">Accordions</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Navbars</span>
+       </a>
+       <span class="tooltip">Navbars</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Sliders</span>
+       </a>
+       <span class="tooltip">Sliders</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Scroll</span>
+       </a>
+       <span class="tooltip">Scroll</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-heart' ></i>
+         <span class="links_name">Mouse</span>
+       </a>
+       <span class="tooltip">Mouse</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Settings</span>
+       </a>
+       <span class="tooltip">Settings</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details justify-content-between ">
+           <img class="image_profile" src="./../.././../assets/img/ñññ1.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">Cristian Rojas</div>
+             <div class="job">Full Stack Developer</div>
+           </div>
+           <i class='bx bx-log-out' id="log_out" ></i>
+         </div>
+         
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <router-outlet></router-outlet>
+  </section>
