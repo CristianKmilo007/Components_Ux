@@ -3,23 +3,26 @@
     left: 0;
     top: 0;
     height: 100%;
-    width: 78px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
     background: #11101D;
-    padding: 6px 14px;
+    padding-top: 10px;
     z-index: 99;
     transition: all 0.5s ease;
   }
   .sidebar.open{
-    width: 300px;
+    width: 78px;
   }
   .sidebar .logo-details{
     height: 60px;
+    padding: 0 14px;
     display: flex;
     align-items: center;
     position: relative;
   }
   .sidebar .logo-details .icon{
-    opacity: 0;
+    opacity: 1;
     transition: all 0.5s ease;
     font-size: 40px;
     margin-right: 10px;
@@ -39,27 +42,28 @@
     color: #fff;
     font-size: 20px;
     font-weight: 600;
-    opacity: 0;
+    opacity: 1;
     transition: all 0.5s ease;
   }
   .sidebar.open .logo-details .icon,
   .sidebar.open .logo-details .logo_name{
-    opacity: 1;
+    opacity: 0;
   }
   .sidebar .logo-details #btn{
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 7px;
+    padding-right: 14px;
     transform: translateY(-50%);
     font-size: 22px;
     transition: all 0.4s ease;
     font-size: 23px;
-    text-align: center;
+    text-align: right;
     cursor: pointer;
     transition: all 0.5s ease;
   }
   .sidebar.open .logo-details #btn{
-    text-align: right;
+    text-align: center;
   }
   .sidebar i{
     color: #fff;
@@ -81,8 +85,8 @@
 
   .sidebar .nav-list{
     margin-top: 50px;
-    height: 100%;
-    padding-left: 0 ;
+    height: auto;
+    padding: 0 14px;
   }
   .sidebar li{
     position: relative;
@@ -105,6 +109,7 @@
     white-space: nowrap;
     pointer-events: none;
     transition: 0s;
+    display: none;
   }
   .sidebar li:hover .tooltip{
     opacity: 1;
@@ -114,7 +119,7 @@
     
   }
   .sidebar.open li .tooltip{
-    display: none;
+    display: block;
   }
   .sidebar input{
     font-size: 15px;
@@ -123,15 +128,16 @@
     outline: none;
     height: 50px;
     width: 100%;
-    width: 50px;
     border: none;
     border-radius: 12px;
     transition: all 0.5s ease;
     background: #1d1b31;
+    padding: 0 20px 0 50px;
   }
   .sidebar.open input{
-    padding: 0 20px 0 50px;
+    
     width: 100%;
+    padding: 0 20px 0 30px;
   }
   .sidebar .bx-search{
     position: absolute;
@@ -169,13 +175,13 @@
     font-size: 15px;
     font-weight: 400;
     white-space: nowrap;
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
+    pointer-events: auto;
     transition: 0.4s;
   }
   .sidebar.open li a .links_name{
-    opacity: 1;
-    pointer-events: auto;
+    opacity: 0;
+    pointer-events: none;
   }
   .sidebar li a:hover .links_name,
   .sidebar li a:hover i{
@@ -188,21 +194,19 @@
     font-size: 18px;
     border-radius: 12px;
   }
-  .sidebar li.profile{
-    position:fixed;
-    width: 78px;
-    left: 0;
-    bottom: -8px;
-    padding: 14px 14px;
+  .sidebar .profile{
+    margin-top: auto;
+    width: 300px;
+    padding: 9px 11px;
     transition: all 0.5s ease;
     overflow: hidden;
-  }
-  .sidebar.open li.profile{
-    width: 300px;
     background-color:#1d1b31;
- 
   }
-  .sidebar li .profile-details{
+  .sidebar.open .profile{
+    width: 78px;
+    background-color:transparent;
+  }
+  .sidebar .profile-details{
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -215,22 +219,22 @@
     border-radius: 6px;
     margin-right: 10px;
   }
-  .sidebar li.profile .name,
-  .sidebar li.profile .job{
+  .sidebar .profile .name,
+  .sidebar .profile .job{
     font-size: 15px;
     font-weight: 400;
     color: #fff;
     white-space: nowrap;
-    visibility: hidden;
+    visibility: visible;
   }
-  .sidebar li.profile .job{
+  .sidebar .profile .job{
     font-size: 12px;
   }
 
   .sidebar .profile-details img{
     height: 52px;
     width: 52px;
-    padding: 10px;
+    padding: 0px;
     object-fit: cover;
     border-radius: 14px;
     background:#1d1b31;
@@ -240,11 +244,11 @@
   }
 
   .sidebar.open .profile-details img{
-    padding: 0px;
+    padding: 10px;
   }
 
   .sidebar .profile-details i{
-    visibility: hidden;
+    visibility: visible;
     font-size: 25px;
     cursor: pointer;
   }
@@ -252,7 +256,7 @@
   .sidebar.open .profile-details i,
   .sidebar.open .profile-details .name,
   .sidebar.open .profile-details .job{
-    visibility: visible;
+    visibility: hidden;
   }
 
   .home-section{
@@ -260,15 +264,15 @@
     background: #E4E9F7;
     min-height: 100vh;
     top: 0;
-    left: 78px;
-    width: calc(100% - 78px);
+    left: 300px;
+    width: calc(100% - 300px);
     transition: all 0.5s ease;
     z-index: 2;
     padding: 40px;
   }
   .sidebar.open ~ .home-section{
-    left: 300px;
-    width: calc(100% - 300px);
+    left: 78px;
+    width: calc(100% - 78px);
   }
 
   @media (max-width: 420px) {
@@ -276,3 +280,103 @@
       display: none;
     }
   }
+
+  @media (max-width: 650px){
+    .home-section{
+        padding: 40px 20px !important;
+    }
+
+    .sidebar{
+      width: 78px;
+    }
+
+    .sidebar.open{
+      width: 300px;
+    }
+
+    .sidebar .logo-details .icon,
+    .sidebar .logo-details .logo_name{
+      opacity: 0;
+    }
+
+    .sidebar.open .logo-details .icon,
+    .sidebar.open .logo-details .logo_name{
+      opacity: 1;
+    }
+
+    .sidebar .logo-details #btn{
+      text-align: center;
+    }
+
+    .sidebar.open .logo-details #btn{
+      text-align: right;
+    }
+
+    .sidebar li .tooltip{
+      display: block;
+    }
+
+    .sidebar.open li .tooltip{
+      display: none;
+    }
+
+    .sidebar input{
+      padding: 0 20px 0 30px;
+    }
+
+    .sidebar.open input{
+      width: 100%;
+      padding: 0 20px 0 50px;
+    }
+
+    .sidebar li a .links_name{
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .sidebar.open li a .links_name{
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .sidebar .profile{
+      width: 78px;
+      background-color:transparent;
+    }
+
+    .sidebar.open .profile{
+      width: 300px;
+      background-color:#1d1b31;
+    }
+
+    .sidebar .profile-details i,
+    .sidebar .profile-details .name,
+    .sidebar .profile-details .job{
+      visibility: hidden !important;
+    }
+
+    .sidebar.open .profile-details i,
+    .sidebar.open .profile-details .name,
+    .sidebar.open .profile-details .job{
+      visibility: visible !important;
+    }
+
+    .sidebar .profile-details img{
+      padding: 10px;
+    }
+
+    .sidebar.open .profile-details img{
+      padding: 0px;
+    }
+
+    .home-section{
+      left: 78px;
+      width: calc(100% - 78px);
+    }
+
+    .sidebar.open ~ .home-section{
+      left: 300px;
+      width: calc(100% - 300px);
+    }
+
+}

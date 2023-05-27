@@ -1,10 +1,10 @@
-<section>
+<section class="buttons-section">
     <div class="d-flex flex-column justify-content-center align-items-center mb-5">
         <h1 class="fw-semibold mb-3">Buttons</h1>
-        <div class="w-25 linear_grad" style="height: 2px;"></div>
+        <div class="linear_grad"></div>
     </div>
 
-    <div class="content d-flex flex-wrap justify-content-center  text-center">
+    <div class="content d-flex flex-wrap justify-content-center  text-center" style="gap: 20px;" >
 
         <!-- BUTTON 1 -->
         <div class="items button1  d-flex justify-content-center align-items-center" style="background: #0c002b;">
@@ -76,5 +76,42 @@
             </a>
         </div>
 
+         <!-- BUTTON 8 -->
+         <div class="items button8 position-relative d-flex justify-content-center align-items-center" style="background: #040d15">
+            <a id="btn8" class="button8-link text-uppercase fs-4 px-4 py-2 ">
+                Button
+            </a>
+        </div>
+
+        <!-- BUTTON 9 -->
+        <div class="items button9 d-flex justify-content-center align-items-center" style="background: #000">
+            <a class="button9-link text-uppercase w-75 fs-4 px-4 py-2 ">
+                <span>Button</span>
+            </a>
+        </div>
+
+
+
     </div>
 </section>
+
+
+<script>
+    const button8 = document.getElementById('btn8')
+    button8.forEach(btn => {
+        btn.addEventListener('mouseenter', function(e){
+            let x = e.clientX - e.target.offsetLeft
+            let y = e.clientY - e.target.offsetTop
+
+            let ripples = document.createElement('span')
+            ripples.style.left = x + 'px'
+            ripples.style.top = y + 'px'
+
+            this.appendChild(ripples)
+
+            setTimeout(()=>{
+                ripples.remove()
+            }, 1000)
+        })
+    })
+</script>
