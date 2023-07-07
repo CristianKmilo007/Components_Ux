@@ -1,3 +1,4 @@
+<!-- <link rel="stylesheet" href="./../../../assets/css/buttons.css"> -->
 <section class="buttons-section">
     <div class="d-flex flex-column justify-content-center align-items-center mb-5">
         <h1 class="fw-semibold mb-3">Buttons</h1>
@@ -90,28 +91,7 @@
             </a>
         </div>
 
-
-
     </div>
 </section>
 
 
-<script>
-    const button8 = document.getElementById('btn8')
-    button8.forEach(btn => {
-        btn.addEventListener('mouseenter', function(e){
-            let x = e.clientX - e.target.offsetLeft
-            let y = e.clientY - e.target.offsetTop
-
-            let ripples = document.createElement('span')
-            ripples.style.left = x + 'px'
-            ripples.style.top = y + 'px'
-
-            this.appendChild(ripples)
-
-            setTimeout(()=>{
-                ripples.remove()
-            }, 1000)
-        })
-    })
-</script>

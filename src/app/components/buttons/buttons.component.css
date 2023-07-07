@@ -592,6 +592,7 @@
     border-radius: 40px;
     letter-spacing: 2px;
     overflow: hidden;
+    position: relative;
 }
 
 .button8-link span{
@@ -600,8 +601,11 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     border-radius: 50%;
+    z-index: 1;
     animation: animate8 1s linear infinite;
 }
+
+
 
 @keyframes animate8{
     0%{
@@ -694,5 +698,3 @@
     color: rgba(255, 255, 255, 1);
 }
 
-
-  

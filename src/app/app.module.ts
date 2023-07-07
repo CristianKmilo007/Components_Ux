@@ -7,6 +7,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { CardsComponent } from './components/cards/cards.component';
 
+import { CargarScriptsService } from './services/cargar-scripts.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,9 @@ import { CardsComponent } from './components/cards/cards.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    CargarScriptsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
