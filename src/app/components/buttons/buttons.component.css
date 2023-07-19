@@ -155,7 +155,7 @@
     color: #258432;
     background: #21f321;
     box-shadow: 0 0 60px #21f321;
-    transition-delay: 1s;
+    transition-delay: .5s;
 }
 
 .button2-link span{
@@ -173,7 +173,7 @@
 
 .button2-link:hover span:nth-child(1){
     left: 100%;
-    transition: 1s;
+    transition: .5s;
 }
 
 .button2-link span:nth-child(3){
@@ -186,8 +186,8 @@
 
 .button2-link:hover span:nth-child(3){
     right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
+    transition: .5s;
+    transition-delay: 0.25s;
 }
 
 .button2-link span:nth-child(2){
@@ -200,8 +200,8 @@
 
 .button2-link:hover span:nth-child(2){
     top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
+    transition: .5s;
+    transition-delay: 0.125s;
 }
 
 .button2-link span:nth-child(4){
@@ -214,8 +214,8 @@
 
 .button2-link:hover span:nth-child(4){
     bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
+    transition: .5s;
+    transition-delay: 0.375s;
 }
 
 /* ------------ BUTTON 3 ---------------*/
@@ -1074,15 +1074,11 @@
 .button16-link{
     position: absolute;
     color: #fff;
-    background: #111f6c;
+    background: #00a2cd;
     transition: .3s;
     transition-delay: .4s;
     border-radius: 1rem;
     width: 63%;
-}
-
-.button16-link:hover{
-    background: #3f51b5;
 }
 
 .button16-link::before{
@@ -1184,9 +1180,9 @@
     width: calc(100% + 8px);
     height: calc(100% - 16px);
     background: #fff;
-    transition  : .5s ease-in-out;
+    transition  : .2s ease-in-out;
     transform: scaleY(1);
-    transition-delay: .5s;
+    transition-delay: .2s;
 }
 
 .button18-link:hover:before{
@@ -1201,7 +1197,7 @@
     height: calc(100% + 8px);
     width: calc(100% - 16px);
     background: #fff;
-    transition  : .5s ease-in-out;
+    transition  : .3s ease-in-out;
     transform: scaleX(1);
 }
 
@@ -1221,7 +1217,7 @@
     position: relative;
     color: #21ebff;
     letter-spacing: 2px;
-    transition: .5s;
+    transition: .3s;
     border-radius: .8rem 0 .8rem 0;
     filter: hue-rotate(115deg);
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
@@ -1231,7 +1227,7 @@
     background: #21ebff;
     color: #111;
     box-shadow:  0 0 50px #21ebff;
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
 }
 
 .button19-link::before{
@@ -1243,9 +1239,9 @@
     height: 20px;
     border-top: 2px solid #21ebff;
     border-left: 2px solid #21ebff;
-    transition: .5s;
+    transition: .3s;
     border-radius: .8rem 0 0 0 ;
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
 }
 
 .button19-link:hover:before{
@@ -1263,13 +1259,283 @@
     height: 20px;
     border-right: 2px solid #21ebff;
     border-bottom: 2px solid #21ebff;
-    transition: .5s;
+    transition: .3s;
     border-radius: 0 0 .8rem 0 ;
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
 }
 
 .button19-link:hover:after{
     width: 100%;
     height: 100%;
     transition-delay: 0s;
+}
+
+/* ------------ BUTTON 20 ---------------*/
+.button20{
+    z-index: 1;
+}
+
+.button20-link{
+    position: relative;
+    letter-spacing: 2px;
+    background: transparent;
+    overflow: hidden;
+    color: #1687ed;
+    border-radius: .8rem;
+    transition: all .4s;
+}
+
+.button20-link:hover{
+    color: #fff;
+}
+
+.button20-link span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 3px solid #1687ed;
+    border-radius: .8rem;
+}
+
+.button20-link span::before{
+    content: '';
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: #15375a;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all .4s;
+}
+
+.button20-link:hover span::before{
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: #1687ed;
+}
+
+
+/* ------------ BUTTON 21 ---------------*/
+
+.button21-link{
+    position: relative;
+    letter-spacing: 2px;
+    transition: all .4s;
+    display: inline-block;
+    color: rgba(255, 255, 255, .4);
+    background: #262c37;
+}
+
+.button21-link:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.button21-link span{
+    display: block;
+    position: absolute;
+    background: #FF5722;
+}
+
+.button21-link span:nth-child(1){
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .4s;
+}
+
+.button21-link:hover span:nth-child(1){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .4s;
+}
+
+.button21-link span:nth-child(2){
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s;
+}
+
+.button21-link:hover span:nth-child(2){
+    transform: scaleY(1);
+    transform-origin: left;
+    transition: transform .4s;
+}
+
+.button21-link span:nth-child(3){
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .4s;
+    transition-delay: .4s;
+}
+
+.button21-link:hover span:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .4s;
+    transition-delay: .4s;
+}
+
+.button21-link span:nth-child(4){
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s;
+    transition-delay: .4s;
+}
+
+.button21-link:hover span:nth-child(4){
+    transform: scaleY(1);
+    transform-origin: left;
+    transition: transform .4s;
+    transition-delay: .4s;
+}
+
+
+/* ------------ BUTTON 22 ---------------*/
+
+.button22-link{
+    position: relative;
+    letter-spacing: 2px;
+    transition: all .4s;
+    display: inline-block;
+    color: #fff;
+    border: 2px solid transparent;
+    padding: .8rem 1.5rem;
+}
+
+.button22-link:hover{
+    border: 2px solid #fff;
+}
+
+.button22-link::before{
+    content: '';
+    position: absolute;
+    inset: 0 5px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transition: .8s;
+}
+
+.button22-link::after{
+    content: '';
+    position: absolute;
+    inset: 5px 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: .8s;
+}
+
+.button22-link:hover:before{
+    inset: 0 5px;
+    transform: rotateY(180deg);
+}
+
+.button22-link:hover:after{
+    inset: 5px 0;
+    transform: rotateX(180deg);
+}
+
+
+/* ------------ BUTTON 23 ---------------*/
+
+.button23-link{
+    position: relative;
+    letter-spacing: 2px;
+    transition: all .4s;
+    display: inline-block;
+    color: #fff;
+    border: 2px solid transparent;
+    padding: .8rem 1.5rem;
+}
+
+.button23-link:hover{
+    border: 2px solid #fff;
+}
+
+.button23-link::before{
+    content: '';
+    position: absolute;
+    inset: 0 5px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transition: .4s;
+}
+
+.button23-link::after{
+    content: '';
+    position: absolute;
+    inset: 5px 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: .4s;
+}
+
+.button23-link:hover:before{
+    inset: 0 -8px;
+    transform: skewY(10deg);
+}
+
+.button23-link:hover:after{
+    inset: -8px 0;
+    transform: skewX(10deg);
+}
+
+
+/* ------------ BUTTON 24 ---------------*/
+
+.button24-link{
+    position: relative;
+    letter-spacing: 2px;
+    transition: all .4s;
+    display: inline-block;
+    color: #fff;
+    border: 2px solid transparent;
+    padding: .8rem 1.5rem;
+}
+
+.button24-link::before{
+    content: '';
+    position: absolute;
+    inset: 0 5px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transition: .4s;
+}
+
+.button24-link::after{
+    content: '';
+    position: absolute;
+    inset: 5px 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: .4s;
+}
+
+.button24-link:hover:before{
+    inset: 0 0;
+    transform: rotate(-10deg);
+}
+
+.button24-link:hover:after{
+    inset: 0 -4px;
+    transform: rotate(5deg);
 }
