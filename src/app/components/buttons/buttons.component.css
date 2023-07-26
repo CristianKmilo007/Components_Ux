@@ -1833,3 +1833,353 @@
 }
 
 
+/* ------------ BUTTON 29 ---------------*/
+
+.button29-link{
+    position: relative;
+    letter-spacing: 2px;
+    transition: all .3s;
+    color: #fff;
+}
+
+.button29-link span{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transition: 0.5s;
+}
+
+.button29-link span:nth-child(1){
+    left: -2px;
+    top: -2px;
+    border-bottom: 2px solid #23a7f2;
+    border-right: 2px solid #23a7f2;
+}
+
+.button29-link span:nth-child(2){
+    right: -2px;
+    top: -2px;
+    transform: rotate(90deg);
+    border-bottom: 2px solid #23a7f2;
+    border-right: 2px solid #23a7f2;
+}
+
+.button29-link span:nth-child(3){
+    right: -2px;
+    bottom: -2px;
+    transform: rotate(180deg);
+    border-bottom: 2px solid #23a7f2;
+    border-right: 2px solid #23a7f2;
+}
+
+.button29-link span:nth-child(4){
+    left: -2px;
+    bottom: -2px;
+    transform: rotate(270deg);
+    border-bottom: 2px solid #23a7f2;
+    border-right: 2px solid #23a7f2;
+}
+
+.button29-link:hover span:nth-child(1){
+    top: 2px;
+    left: 2px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.button29-link:hover span:nth-child(3){
+    bottom: 2px;
+    right: 2px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.button29-link:hover span:nth-child(2){
+    top: calc(100% - 8px);
+    right: calc(100% - 8px);
+    background: transparent;
+}
+
+.button29-link:hover span:nth-child(4){
+    bottom: calc(100% - 8px);
+    left: calc(100% - 8px);
+    background: transparent;
+}
+
+
+/* ------------ BUTTON 30 ---------------*/
+
+.button30-link{
+    position: relative;
+    letter-spacing: 2px;
+    transition: all .3s;
+    color: #35dada;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, .5) 0 12px 22px;
+    overflow: hidden;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button30-link::before{
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background-image: conic-gradient(#35dada 45deg, transparent 100%);
+    animation: rot 3s linear infinite;
+}
+
+.button30-link::after{
+    content: 'BUTTOM';
+    width: 99%;
+    height: 51px;
+    background-color: #2b2929;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(-360deg);
+    }
+}
+
+
+/* ------------ BUTTON 31 ---------------*/
+
+.button31-link{
+    position: relative;
+    letter-spacing: 2px;
+    background: #039be5;
+    color: #ffffff;
+    border-radius: 50rem;
+    transition: transform 0.3s ease;
+}
+
+.button31-link::after, .button31-link::before{
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #039be5;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    
+}
+
+.button31-link:hover{
+    transform: translate(-10px, -10px);
+}
+
+.button31-link:hover::after{
+    transform: translate(5px, 5px);
+}
+
+.button31-link:hover::before{
+    transform: translate(10px, 10px);
+}
+
+
+/* ------------ BUTTON 32 ---------------*/
+
+:root {
+    --clr-neon: #14f7ff;
+    --clr-bg: #001414;
+}
+
+.button32{
+    overflow: hidden;
+    z-index: 1;
+}
+  
+.button32-link {
+    display: inline-block;
+    position: relative;
+    border: var(--clr-neon) 2px solid;
+    border-radius: 1rem;
+    text-shadow: 
+      0 0 .20em #FFF7,
+      0 0 .30em var(--clr-neon);
+    box-shadow: 
+      inset 0 0 .5em var(--clr-neon),
+            0 0 .5em var(--clr-neon);
+    letter-spacing: 2px;
+    color: var(--clr-neon);
+}
+  
+.button32-link::before {
+    content: "";
+    position: absolute;
+    top: 140%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: var(--clr-neon);
+    transform: 
+      perspective(0.2em)
+      rotateX(10deg) 
+      scale(.8, 0.3);
+    filter: blur(0.5em);
+    opacity: 0.6;
+    pointer-events: none;
+    transition: opacity 100ms linear;
+}
+  
+.button32-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-neon);
+    box-shadow: 0 0 2em var(--clr-neon);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 100ms linear;
+    border-radius: .7rem;
+}
+  
+.button32-link:hover::after {
+    opacity: 1;
+}
+
+.button32-link:hover, .button32-link:focus {
+    color: white;
+}
+
+.button32-link:hover::before {
+    opacity: 0.8;
+}
+
+
+/* ------------ BUTTON 33 ---------------*/
+
+.button33-link {
+  position: relative;
+  border-radius: 1rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7d2ae8;
+  transition: all 0.2s ease;
+  letter-spacing: 2px;
+}
+
+.button33-link:hover {
+  transform: scale(0.96);
+}
+
+.button33-link:before,
+.button33-link:after {
+  position: absolute;
+  content: "";
+  width: 130%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+
+.button33-link:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  animation: greentopBubbles ease-in-out 0.6s forwards;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.button33-link:hover:after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  animation: greenbottomBubbles ease-in-out 0.6s forwards;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+
+/* ------------ BUTTON 34 ---------------*/
+
+.button34-link {
+    position: relative;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #00dbde, #fc00ff);
+    color: #fff;
+    border-radius: .8rem;
+}
+
+.button34-link::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 14px;
+    border: solid;
+    border-color: #000 rgba(255, 255, 255, .3) rgba(255, 255, 255, .3) #000;
+    border-bottom-right-radius: 5px;
+    transition: .4s ease-out;
+}
+
+.button34-link:hover:before{
+    border-width: 14px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
