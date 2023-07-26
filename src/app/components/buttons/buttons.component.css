@@ -1148,7 +1148,7 @@
     left: 5%;
     width: 90%;
     height: 4px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: .8rem 0 0 .8rem;
     border-radius: 50%;
     transform: scale(0);
@@ -1539,3 +1539,297 @@
     inset: 0 -4px;
     transform: rotate(5deg);
 }
+
+
+/* ------------ BUTTON 25 ---------------*/
+
+.button25-link{
+    position: relative;
+    letter-spacing: 2px;
+    transition: all .3s;
+    display: inline-block;
+    border: 2px solid #0f0;
+    color: #fff;
+    border-radius: .8rem;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+}
+
+.button25-link:hover{
+    color: #000;
+    box-shadow: 0 0 60px #0f0;
+    transition-delay: .6s;
+}
+
+.button25-link span{
+    position: relative;
+    z-index: 3;
+}
+
+.button25-link::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #0f0;
+    box-shadow: 5px -8px 0 #0f0, 5px 8px 0 #0f0;
+    transition: width .3s, left .3s, height .3s, box-shadow .3s;
+    transition-delay: .6s, .3s, 0s, 0s;
+    border-radius: .8rem;
+}
+
+.button25-link:hover:before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0px 0 #0f0, 5px 0px 0 #0f0;
+    transition-delay: 0s, .3s, .6s, .6s;
+}
+
+.button25-link::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #0f0;
+    box-shadow: -5px -8px 0 #0f0, -5px 8px 0 #0f0;
+    transition: width .3s, right .3s, height .3s, box-shadow .3s;
+    transition-delay: .6s, .3s, 0s, 0s;
+    border-radius: .8rem;
+}
+
+.button25-link:hover:after{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0px 0 #0f0, -5px 0px 0 #0f0;
+    transition-delay: 0s, .3s, .6s, .6s;
+}
+
+
+/* ------------ BUTTON 26 ---------------*/
+
+.button26-link{
+    position: relative;
+    letter-spacing: 2px;
+    transition: all .3s;
+    background: #000046;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.button26-link:hover span{
+    border-left: 4px solid #000046;
+    border-right: 4px solid #000046;
+}
+
+.button26-link span{
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    transition: .3s;
+}
+
+.button26-link::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #1cb5e0;
+    transition: .3s ease-in-out;
+    transition-delay: .3s;
+}
+
+.button26-link::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: #1cb5e0;
+    transition: .3s ease-in-out;
+    transition-delay: .3s;
+}
+
+.button26-link:hover:before,
+.button26-link:hover:after{
+    width: 50%;
+    transition-delay: 0s;
+}
+
+.button26-link span:nth-child(1){
+    transition-delay: 0.3s;
+}
+
+.button26-link:hover span:nth-child(1){
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.button26-link span:nth-child(2){
+    transform: scale(2);
+    opacity: 0;
+    color: #fff;
+    transition-delay: 0s;
+    width: 100%;
+    height: 100%;
+    border-left: 0px solid #000046;
+    border-right: 0px solid #000046;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button26-link:hover span:nth-child(2){
+    transform: scale(1);
+    transition-delay: 0s;
+    opacity: 1;
+    transition-delay: .3s;
+    border-left: 4px solid #000046;
+    border-right: 4px solid #000046;
+}
+
+
+/* ------------ BUTTON 27 ---------------*/
+
+.button27-link{
+    position: relative;
+    letter-spacing: 2px;
+    transition: all .3s;
+    background: #fff;
+    height: 53px;
+    border-radius: .8rem;
+}
+
+.button27-link::before,
+.button27-link::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    transition: .4s;
+    background: red;
+    border-radius: .8rem;
+}
+
+.button27-link:nth-child(1):before,
+.button27-link:nth-child(1):after{
+    background: linear-gradient(45deg, #00ccff, #0e1538, #d400d4);
+}
+
+.button27-link:hover:before{
+    inset: -2px;
+}
+
+.button27-link:hover:after{
+    inset: -2px;
+    filter: blur(10px);
+}
+
+.button27-link span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0e1538;
+    z-index: 3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: .7rem;
+}
+
+.button27-link span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .075);
+    transform: skew(25deg);
+}
+
+
+/* ------------ BUTTON 28 ---------------*/
+
+.button28-link{
+    position: relative;
+    letter-spacing: 2px;
+    transition: all .3s;
+    color: #262626;
+    border: 2px solid #262626;
+    width: max-content !important;
+    border-radius: 1rem;
+}
+
+.button28-link:hover{
+    letter-spacing: 5px;
+}
+
+.button28-link::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #fff;
+    border-radius: 1rem;
+}
+
+.button28-link span{
+    position: relative;
+    z-index: 3;
+}
+
+.button28-link i{
+    position: absolute;
+    display: block;
+    inset: 0;
+}
+
+.button28-link i::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 80%;
+    height: 2px;
+    background: #fff;
+    width: 30px;
+    transition: .3s;
+    transform: translateX(-50%);
+}
+
+.button28-link:hover i::before{
+    left: 20%;
+}
+
+.button28-link i::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: 80%;
+    height: 2px;
+    background: #fff;
+    width: 30px;
+    transition: .3s;
+    transform: translateX(50%);
+}
+
+.button28-link:hover i::after{
+    right: 20%;
+}
+
+
