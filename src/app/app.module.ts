@@ -7,14 +7,16 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { CardsComponent } from './components/cards/cards.component';
 
-import { CargarScriptsService } from './services/cargar-scripts.service'
+import { CargarScriptsService } from './services/cargar-scripts.service';
+import { FormsComponent } from './components/forms/forms.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     ButtonsComponent,
-    CardsComponent
+    CardsComponent,
+    FormsComponent
   ],
   imports: [
     BrowserModule,

@@ -2,17 +2,17 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { CargarScriptsService } from './../../services/cargar-scripts.service'
 
 @Component({
-  selector: 'app-cards',
-  templateUrl: './cards.component.html',
-  styleUrls: ['./cards.component.css'],
+  selector: 'app-forms',
+  templateUrl: './forms.component.html',
+  styleUrls: ['./forms.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class CardsComponent implements OnInit {
+export class FormsComponent implements OnInit {
 
   constructor(
     private _cargaScripts:CargarScriptsService
   ) { 
-    _cargaScripts.cargaScripts(["/cards"])
+    _cargaScripts.cargaScripts(["/forms"])
   }
 
   ngOnInit(): void {
