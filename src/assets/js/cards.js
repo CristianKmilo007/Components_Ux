@@ -1,14 +1,12 @@
-
 /* ------------ CARD 1 ---------------*/
 
 const img = document.querySelector(".card1 img");
 const icons = document.querySelector(".card1 .icons");
 
-img.addEventListener('click', function(){
-    this.classList.toggle("active");
-    icons.classList.toggle("active");
-})
-
+img.addEventListener("click", function () {
+  this.classList.toggle("active");
+  icons.classList.toggle("active");
+});
 
 /* ------------ CARD 3 ---------------*/
 
@@ -17,14 +15,13 @@ VanillaTilt.init(document.querySelector(".card3 .container"), {
   speed: 200,
 });
 
-
 /* ------------ CARD 5 ---------------*/
 
 VanillaTilt.init(document.querySelector(".card5 .box"), {
   max: 15,
   speed: 200,
   glare: true,
-  "max-glare": .4,
+  "max-glare": 0.4,
 });
 
 /* $('.card5').mousemove(function(p){

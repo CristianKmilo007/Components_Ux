@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="back">
                     <div class="stripe"></div>
                     <div class="box">
@@ -40,14 +40,15 @@
                         <img src="image/visa.png" alt="">
                     </div>
                 </div>
-        
+
             </div>
-        
+
             <form action="">
                 <div class=" d-flex gap-3">
                     <div class="inputBox w-50">
                         <span>card number</span>
-                        <input type="text"  maxlength="19" class="card-number-input" onkeypress="return SoloNumbers(event)">
+                        <input type="text" maxlength="19" class="card-number-input"
+                            onkeypress="return SoloNumbers(event)">
                     </div>
                     <div class="inputBox w-50">
                         <span>card holder</span>
@@ -91,7 +92,7 @@
                     </div>
                     <div class="inputBox">
                         <span>cvv</span>
-                        <input type="text" maxlength="4" class="cvv-input">
+                        <input type="text" maxlength="4" class="cvv-input" onkeypress="return SoloNumbers(event)">
                     </div>
                 </div>
                 <input type="submit" value="submit" class="submit-btn">
@@ -100,9 +101,155 @@
 
         <!-- FORM 2 -->
         <div class="items-forms form2 d-flex justify-content-center align-items-center"
-            style="background-image: url(../../../assets/img/back.jpg);">
+            style="background: linear-gradient(to bottom, #f1f4f9, #dff1ff)">
 
-            
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="box">
+                <div class="square" style="--i:0"></div>
+                <div class="square" style="--i:1"></div>
+                <div class="square" style="--i:2"></div>
+                <div class="square" style="--i:3"></div>
+                <div class="square" style="--i:4"></div>
+                <div class="container">
+                    <div class="form">
+                        <h2>Login Form</h2>
+                        <form action="">
+                            <div class="inputBox">
+                                <input type="text" placeholder="Username">
+                            </div>
+                            <div class="inputBox">
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" value="Login">
+                            </div>
+                            <p class="forget">Forgot password? <a href="#">Click here</a></p>
+                            <p class="forget">Don't have an account? <a href="#">Sign up</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- FORM 3 -->
+        <div class="items-forms items-complet form3 d-flex justify-content-center align-items-center"
+            style="background: transparent">
+            <div class="container">
+                <div class="signin-signup">
+                    <form action="" class="sign-in-form">
+                        <h2 class="title">Sign in</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <input type="submit" value="Login" class="btn">
+                        <p class="social-text">Or Sign in with social platform</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+                    </form>
+                    <form action="" class="sign-up-form">
+                        <h2 class="title">Sign up</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <input type="submit" value="Sign up" class="btn">
+                        <p class="social-text">Or Sign in with social platform</p>
+                        <div class="social-media">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="social-icon">
+                                <i class="fab fa-google"></i>
+                            </a>
+                            <a href="" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+                    </form>
+                </div>
+                <div class="panels-container">
+                    <div class="panel left-panel">
+                        <div class="content">
+                            <h3>Member of Brand?</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium dolor, eos
+                                incidunt minima iure?</p>
+                            <button class="btn" id="sign-in-btn">Sign in</button>
+                        </div>
+                        <img src="../../../assets/img/signin.svg" alt="" class="image">
+                    </div>
+                    <div class="panel right-panel">
+                        <div class="content">
+                            <h3>New to Brand?</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque accusantium dolor, eos
+                                incidunt minima iure?</p>
+                            <button class="btn" id="sign-up-btn">Sign up</button>
+                        </div>
+                        <img src="../../../assets/img/signup.svg" alt="" class="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FORM 4 -->
+        <div class="items-forms form4 d-flex justify-content-center align-items-center" style="background: #fff;">
+
+            <div class="main">
+                <input type="checkbox" id="chk" aria-hidden="true">
+
+                <div class="signup">
+                    <form action="">
+                        <label for="chk" aria-hidden="true">Sign up</label>
+                        <input type="text" name="txt" placeholder="User name" required="">
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Sign up</button>
+                    </form>
+                </div>
+
+                <div class="login">
+                    <form action="">
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="email" name="email" placeholder="Email" required="">
+                        <input type="password" name="pswd" placeholder="Password" required="">
+                        <button>Login</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
     </div>
