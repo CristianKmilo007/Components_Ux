@@ -1,4 +1,4 @@
-/* ------------ FORM1 1 ---------------*/
+/* ------------ FORM 1 ---------------*/
 
 document.querySelector(".card-number-input").oninput = () => {
   document.querySelector(".card-number-box").innerText =
@@ -67,13 +67,13 @@ function SoloNumbers(evt) {
   }
 }
 
-/* ------------ FORM1 3 ---------------*/
+/* ------------ FORM 3 ---------------*/
 
-const sign_in_btn = document.querySelector("#sign-in-btn");
-const sign_up_btn = document.querySelector("#sign-up-btn");
+const sign_in_btn = document.querySelector(".form3 #sign-in-btn");
+const sign_up_btn = document.querySelector(".form3 #sign-up-btn");
 const container = document.querySelector(".form3 .container");
-const sign_in_btn2 = document.querySelector("#sign-in-btn2");
-const sign_up_btn2 = document.querySelector("#sign-up-btn2");
+const sign_in_btn2 = document.querySelector(".form3 #sign-in-btn2");
+const sign_up_btn2 = document.querySelector(".form3 #sign-up-btn2");
 sign_up_btn.addEventListener("click", () => {
   container.classList.add("sign-up-mode");
 });
@@ -87,9 +87,15 @@ sign_in_btn2.addEventListener("click", () => {
   container.classList.remove("sign-up-mode2");
 });
 
-/* ------------ FORM 4 ---------------*/
+/* ------------ FORM 6 ---------------*/
 
-VanillaTilt.init(document.querySelector(".form4 .main"), {
-  max: 5,
-  speed: 100,
+const signUpButton = document.querySelector(".form6 #signUp");
+const signInButton = document.querySelector(".form6 #signIn");
+const main = document.querySelector(".form6 #main");
+
+signUpButton.addEventListener("click", () => {
+  main.classList.add("right-panel-active");
+});
+signInButton.addEventListener("click", () => {
+  main.classList.remove("right-panel-active");
 });

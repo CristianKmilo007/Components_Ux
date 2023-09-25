@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { FormsComponent } from './components/forms/forms.component';
+import { LoadersComponent } from './components/loaders/loaders.component';
 
 const appRoute : Routes = [
   {path:'buttons', component: ButtonsComponent},
   {path:'cards', component: CardsComponent},
   {path:'forms', component: FormsComponent},
+  {path:'loaders', component: LoadersComponent},
 
   {path: "", redirectTo: "/sidebar", pathMatch: "full"},
   {path:'**', component: ButtonsComponent}

@@ -8,7 +8,8 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
 import { CardsComponent } from './components/cards/cards.component';
 
 import { CargarScriptsService } from './services/cargar-scripts.service';
-import { FormsComponent } from './components/forms/forms.component'
+import { FormsComponent } from './components/forms/forms.component';
+import { LoadersComponent } from './components/loaders/loaders.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsComponent } from './components/forms/forms.component'
     SidebarComponent,
     ButtonsComponent,
     CardsComponent,
-    FormsComponent
+    FormsComponent,
+    LoadersComponent
   ],
   imports: [
     BrowserModule,
