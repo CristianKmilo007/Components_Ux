@@ -9,7 +9,8 @@ import { CardsComponent } from './components/cards/cards.component';
 
 import { CargarScriptsService } from './services/cargar-scripts.service';
 import { FormsComponent } from './components/forms/forms.component';
-import { LoadersComponent } from './components/loaders/loaders.component'
+import { LoadersComponent } from './components/loaders/loaders.component';
+import { AccordionsComponent } from './components/accordions/accordions.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoadersComponent } from './components/loaders/loaders.component'
     ButtonsComponent,
     CardsComponent,
     FormsComponent,
-    LoadersComponent
+    LoadersComponent,
+    AccordionsComponent
   ],
   imports: [
     BrowserModule,
