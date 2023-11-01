@@ -6,19 +6,19 @@ import { CardsComponent } from './components/cards/cards.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { LoadersComponent } from './components/loaders/loaders.component';
 
-const appRoute : Routes = [
-  {path:'buttons', component: ButtonsComponent},
-  {path:'cards', component: CardsComponent},
-  {path:'forms', component: FormsComponent},
-  {path:'loaders', component: LoadersComponent},
-  {path:'accordions', component: AccordionsComponent},
+const appRoute: Routes = [
+  { path: 'buttons', component: ButtonsComponent },
+  { path: 'cards', component: CardsComponent },
+  { path: 'forms', component: FormsComponent },
+  { path: 'loaders', component: LoadersComponent },
+  { path: 'accordions', component: AccordionsComponent },
 
-  {path: "", redirectTo: "/sidebar", pathMatch: "full"},
-  {path:'**', component: ButtonsComponent}
-]
+  { path: '', redirectTo: '/sidebar', pathMatch: 'full' },
+  { path: '**', component: ButtonsComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(appRoute)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

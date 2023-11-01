@@ -1,0 +1,105 @@
+.linear_grad {
+    background: linear-gradient(90deg, transparent, #11101d, transparent);
+    height: 2px;
+    width: 400px;
+  }
+  
+  .items-accord {
+    padding: 40px;
+    height: auto;
+    width: 32%;
+    border-radius: 30px;
+  }
+  
+  .items-vert {
+    width: 49% !important;
+  }
+  
+  .container {
+    padding: 0;
+  }
+  
+  @media (max-width: 1500px) {
+    .items-accord {
+      width: 800px;
+      margin: auto;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .items-accord {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .linear_grad {
+      width: 250px;
+    }
+  }
+
+  .accordion1{
+    text-align: left;
+  }
+
+  .accordion1 .accordion{
+    width: 100%;
+  }
+
+  .accordion1 .accordion{
+    width: 100%;
+    padding: 0;
+  }
+
+  .accordion1 .accordion li{
+    list-style: none;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.15);
+  }
+
+  .accordion1 .accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .accordion1 label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .accordion1 input[type="radio"]{
+    display: none;
+  }
+
+  .accordion1 .content{
+    color: #555;
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+  }
+
+  .accordion1 .content p{
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+
+  .accordion1 input[type="radio"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px;
+  }
+
+  .accordion1 input[type="radio"]:checked + label::before{
+    content: '-';
+  }
+

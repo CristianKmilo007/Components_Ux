@@ -1638,7 +1638,7 @@
   height: 100%;
 }
 
-.loader33-link .card{
+.loader33-link .card {
   height: 100%;
   width: 100%;
   background: #fff;
@@ -1646,11 +1646,11 @@
   justify-content: center;
   border: none;
 }
-.loader33-link .card .header{
+.loader33-link .card .header {
   display: flex;
   align-items: center;
 }
-.loader33-link .header .img{
+.loader33-link .header .img {
   height: 55px;
   width: 55px;
   background: #d9d9d9;
@@ -1658,29 +1658,29 @@
   position: relative;
   overflow: hidden;
 }
-.loader33-link .header .details{
+.loader33-link .header .details {
   margin-left: 20px;
 }
-.loader33-link .details span{
+.loader33-link .details span {
   display: block;
   background: #d9d9d9;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
 }
-.loader33-link .details .name{
+.loader33-link .details .name {
   height: 15px;
   width: 100px;
 }
-.loader33-link .details .about{
+.loader33-link .details .about {
   height: 13px;
   width: 150px;
   margin-top: 10px;
 }
-.loader33-link .card .description{
+.loader33-link .card .description {
   margin: 10px 0;
 }
-.loader33-link .description .line{
+.loader33-link .description .line {
   background: #d9d9d9;
   border-radius: 10px;
   height: 13px;
@@ -1688,16 +1688,16 @@
   overflow: hidden;
   position: relative;
 }
-.loader33-link .description .line-1{
+.loader33-link .description .line-1 {
   width: calc(100% - 15%);
 }
-.loader33-link .description .line-3{
+.loader33-link .description .line-3 {
   width: calc(100% - 40%);
 }
-.loader33-link .card .btns{
+.loader33-link .card .btns {
   display: flex;
 }
-.loader33-link .card .btns .btn{
+.loader33-link .card .btns .btn {
   height: 35px;
   width: 100%;
   background: #d9d9d9;
@@ -1705,45 +1705,50 @@
   position: relative;
   overflow: hidden;
 }
-.loader33-link .btns .btn-1{
+.loader33-link .btns .btn-1 {
   margin-right: 8px;
 }
-.loader33-link .btns .btn-2{
+.loader33-link .btns .btn-2 {
   margin-left: 8px;
 }
 .loader33-link .header .img::before,
 .loader33-link .details span::before,
 .loader33-link .description .line::before,
-.loader33-link .btns .btn::before{
+.loader33-link .btns .btn::before {
   position: absolute;
   content: "";
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to right, #d9d9d9 0%, rgba(0,0,0,0.05) 20%, #d9d9d9 40%, #d9d9d9 100%);
+  background-image: linear-gradient(
+    to right,
+    #d9d9d9 0%,
+    rgba(0, 0, 0, 0.05) 20%,
+    #d9d9d9 40%,
+    #d9d9d9 100%
+  );
   background-repeat: no-repeat;
   background-size: 450px 400px;
   animation: shimmer33 1s linear infinite;
   top: 0;
   left: 0;
 }
-.loader33-link .header .img::before{
+.loader33-link .header .img::before {
   background-size: 650px 600px;
 }
-.loader33-link .details span::before{
+.loader33-link .details span::before {
   animation-delay: 0.2s;
 }
-.loader33-link .btns .btn-2::before{
+.loader33-link .btns .btn-2::before {
   animation-delay: 0.22s;
 }
 @keyframes shimmer33 {
-  0%{
+  0% {
     background-position: -450px 0;
   }
-  100%{
+  100% {
     background-position: 450px 0;
   }
 }
-
 
 /* ------------ LOADER 34 ---------------*/
 
@@ -1754,7 +1759,7 @@
   height: 100%;
 }
 
-.loader34-link .card{
+.loader34-link .card {
   height: 100%;
   width: 100%;
   background: #414247;
@@ -1762,11 +1767,11 @@
   justify-content: center;
   border: none;
 }
-.loader34-link .card .header{
+.loader34-link .card .header {
   display: flex;
   align-items: center;
 }
-.loader34-link .header .img{
+.loader34-link .header .img {
   height: 55px;
   width: 55px;
   background: #656871;
@@ -1774,29 +1779,29 @@
   position: relative;
   overflow: hidden;
 }
-.loader34-link .header .details{
+.loader34-link .header .details {
   margin-left: 20px;
 }
-.loader34-link .details span{
+.loader34-link .details span {
   display: block;
   background: #656871;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
 }
-.loader34-link .details .name{
+.loader34-link .details .name {
   height: 15px;
   width: 100px;
 }
-.loader34-link .details .about{
+.loader34-link .details .about {
   height: 13px;
   width: 150px;
   margin-top: 10px;
 }
-.loader34-link .card .description{
+.loader34-link .card .description {
   margin: 10px 0;
 }
-.loader34-link .description .line{
+.loader34-link .description .line {
   background: #656871;
   border-radius: 10px;
   height: 13px;
@@ -1804,16 +1809,16 @@
   overflow: hidden;
   position: relative;
 }
-.loader34-link .description .line-1{
+.loader34-link .description .line-1 {
   width: calc(100% - 15%);
 }
-.loader34-link .description .line-3{
+.loader34-link .description .line-3 {
   width: calc(100% - 40%);
 }
-.loader34-link .card .btns{
+.loader34-link .card .btns {
   display: flex;
 }
-.loader34-link .card .btns .btn{
+.loader34-link .card .btns .btn {
   height: 35px;
   width: 100%;
   background: #656871;
@@ -1821,41 +1826,47 @@
   position: relative;
   overflow: hidden;
 }
-.loader34-link .btns .btn-1{
+.loader34-link .btns .btn-1 {
   margin-right: 8px;
 }
-.loader34-link .btns .btn-2{
+.loader34-link .btns .btn-2 {
   margin-left: 8px;
 }
 .loader34-link .header .img::before,
 .loader34-link .details span::before,
 .loader34-link .description .line::before,
-.loader34-link .btns .btn::before{
+.loader34-link .btns .btn::before {
   position: absolute;
   content: "";
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to right, #656871 0%, rgba(255, 255, 255, 0.10) 20%, #656871 40%, #656871 100%);
+  background-image: linear-gradient(
+    to right,
+    #656871 0%,
+    rgba(255, 255, 255, 0.1) 20%,
+    #656871 40%,
+    #656871 100%
+  );
   background-repeat: no-repeat;
   background-size: 450px 400px;
   animation: shimmer 1s linear infinite;
   top: 0;
   left: 0;
 }
-.loader34-link .header .img::before{
+.loader34-link .header .img::before {
   background-size: 650px 600px;
 }
-.loader34-link .details span::before{
+.loader34-link .details span::before {
   animation-delay: 0.2s;
 }
-.loader34-link .btns .btn-2::before{
+.loader34-link .btns .btn-2::before {
   animation-delay: 0.22s;
 }
 @keyframes shimmer {
-  0%{
+  0% {
     background-position: -450px 0;
   }
-  100%{
+  100% {
     background-position: 450px 0;
   }
 }
@@ -1869,7 +1880,7 @@
   align-items: center;
 }
 
-.loader35-link .ring{
+.loader35-link .ring {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -1877,44 +1888,47 @@
   border: 0px solid #011015;
 }
 
-.loader35-link .ring:nth-child(1){
+.loader35-link .ring:nth-child(1) {
   border-bottom-width: 3px;
   border-color: #ff00ff;
   animation: rotate35-1 1.5s linear infinite;
 }
 
-@keyframes rotate35-1{
-  0%{
+@keyframes rotate35-1 {
+  0% {
     transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-  }100%{
+  }
+  100% {
     transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
   }
 }
 
-.loader35-link .ring:nth-child(2){
+.loader35-link .ring:nth-child(2) {
   border-right-width: 3px;
   border-color: #00f7ff;
   animation: rotate35-2 1.5s linear infinite;
 }
 
-@keyframes rotate35-2{
-  0%{
+@keyframes rotate35-2 {
+  0% {
     transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-  }100%{
+  }
+  100% {
     transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
   }
 }
 
-.loader35-link .ring:nth-child(3){
+.loader35-link .ring:nth-child(3) {
   border-top-width: 3px;
   border-color: #00ff0d;
   animation: rotate35-3 1.5s linear infinite;
 }
 
-@keyframes rotate35-3{
-  0%{
+@keyframes rotate35-3 {
+  0% {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-  }100%{
+  }
+  100% {
     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
   }
 }
@@ -1928,14 +1942,14 @@
   align-items: center;
 }
 
-.loader36-link .percent{
+.loader36-link .percent {
   color: #999;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
   margin-bottom: 10px;
 }
-.loader36-link .progress-bar{
+.loader36-link .progress-bar {
   width: 205px;
   height: 12px;
   border-radius: 50rem;
@@ -1943,13 +1957,13 @@
   box-sizing: border-box;
   overflow: hidden;
 }
-.loader36-link .progress{
+.loader36-link .progress {
   width: 10px;
   height: 12px;
   background: #f60d54;
   border-radius: 50rem;
 }
-.loader36-link .text{
+.loader36-link .text {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -1960,17 +1974,17 @@
   display: none;
   bottom: -30px;
 }
-.loader36-link .text-blink{
-  animation: animate36 .7s ease-in-out .1s;
+.loader36-link .text-blink {
+  animation: animate36 0.7s ease-in-out 0.1s;
 }
 @keyframes animate36 {
-  0%{
+  0% {
     opacity: 1;
   }
-  50%{
+  50% {
     opacity: 0.2;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
