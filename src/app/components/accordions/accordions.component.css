@@ -1,105 +1,161 @@
 .linear_grad {
-    background: linear-gradient(90deg, transparent, #11101d, transparent);
-    height: 2px;
-    width: 400px;
-  }
-  
+  background: linear-gradient(90deg, transparent, #11101d, transparent);
+  height: 2px;
+  width: 400px;
+}
+
+.items-accord {
+  padding: 40px;
+  height: auto;
+  width: 32%;
+  border-radius: 30px;
+  text-align: start;
+}
+
+.items-vert {
+  width: 49% !important;
+}
+
+.container {
+  padding: 0;
+}
+
+@media (max-width: 1500px) {
   .items-accord {
-    padding: 40px;
-    height: auto;
-    width: 32%;
-    border-radius: 30px;
+    width: 800px;
+    margin: auto;
   }
-  
-  .items-vert {
-    width: 49% !important;
-  }
-  
-  .container {
-    padding: 0;
-  }
-  
-  @media (max-width: 1500px) {
-    .items-accord {
-      width: 800px;
-      margin: auto;
-    }
-  }
-  
-  @media (max-width: 1000px) {
-    .items-accord {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 650px) {
-    .linear_grad {
-      width: 250px;
-    }
-  }
+}
 
-  .accordion1{
-    text-align: left;
-  }
-
-  .accordion1 .accordion{
+@media (max-width: 1000px) {
+  .items-accord {
     width: 100%;
   }
+}
 
-  .accordion1 .accordion{
-    width: 100%;
-    padding: 0;
+@media (max-width: 650px) {
+  .linear_grad {
+    width: 250px;
   }
+}
 
-  .accordion1 .accordion li{
-    list-style: none;
-    width: 100%;
-    margin: 15px 0;
-    padding: 10px;
-    border-radius: 8px;
-    background: #fff;
-    box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.15);
-  }
+/* ------------ ACCORDION 1 ---------------*/
 
-  .accordion1 .accordion li label{
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-  }
+.accordion1 .accordion {
+  width: 100%;
+}
 
-  .accordion1 label::before{
-    content: '+';
-    margin-right: 10px;
-    font-size: 24px;
-    font-weight: 400;
-  }
+.accordion1 .accordion {
+  width: 100%;
+  padding: 0;
+}
 
-  .accordion1 input[type="radio"]{
-    display: none;
-  }
+.accordion1 .accordion li {
+  list-style: none;
+  width: 100%;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.15);
+}
 
-  .accordion1 .content{
-    color: #555;
-    padding: 0 10px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-  }
+.accordion1 .accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
 
-  .accordion1 .content p{
-    margin-bottom: 0;
-    font-size: 15px;
-  }
+.accordion1 label::before {
+  content: "+";
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 400;
+}
 
-  .accordion1 input[type="radio"]:checked + label + .content{
-    max-height: 400px;
-    padding: 10px;
-  }
+.accordion1 input[type="radio"] {
+  display: none;
+}
 
-  .accordion1 input[type="radio"]:checked + label::before{
-    content: '-';
-  }
+.accordion1 .content {
+  color: #555;
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
 
+.accordion1 .content p {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.accordion1 input[type="radio"]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px;
+}
+
+.accordion1 input[type="radio"]:checked + label::before {
+  content: "-";
+}
+
+/* ------------ ACCORDION 2 ---------------*/
+
+.accordion2 .container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion2 .container .tab{
+  position: relative;
+  background: #fff;
+  padding: 0 20px 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.accordion2 .container .tab .content p{
+  margin-bottom: 0;
+}
+
+.accordion2 .container .tab input{
+  appearance: none;
+}
+
+.accordion2 .container .tab label{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accordion2 .container .tab label::after{
+  content: '+';
+  position: absolute;
+  right: 20px;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+}
+
+.accordion2 .container .tab:hover label::after{
+  color: #333;
+}
+
+.accordion2 .container .tab input:checked ~ label::after{
+  transform: rotate(135deg);
+}
+
+.accordion2 .container .tab label h2{
+ width: 40px;
+ height: 40px;
+ background: #333;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
