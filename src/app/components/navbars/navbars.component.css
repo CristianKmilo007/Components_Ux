@@ -1,0 +1,200 @@
+.linear_grad {
+  background: linear-gradient(90deg, transparent, #11101d, transparent);
+  height: 2px;
+  width: 400px;
+}
+
+.items-navbar {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-vert {
+  width: 49% !important;
+}
+
+.container {
+  padding: 0;
+}
+
+@media (max-width: 1500px) {
+  .items-navbar {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .items-navbar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .linear_grad {
+    width: 250px;
+  }
+}
+
+/* ------------ NAVBAR 1 ---------------*/
+
+.navbar1 nav {
+  width: 100%;
+  background: #047a6b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.navbar1 nav .logo{
+  color: #fff;
+  font-weight: 700;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.navbar1 nav a {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  margin: 0 15px;
+}
+
+.navbar1 nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ef0;
+  left: 0;
+  bottom: -1px;
+  border-radius: 50rem;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  transform-origin: right;
+}
+
+.navbar1 nav a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+/* ------------ NAVBAR 2 ---------------*/
+
+.navbar2 nav {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  border-radius: 50rem;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.navbar2 nav .logo{
+  color: #464646;
+  font-weight: 700;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.navbar2 nav a {
+  position: relative;
+  font-size: 15px;
+  color: #464646;
+  margin: 0 5px;
+  padding: 5px 15px;
+  z-index: 0;
+  transition: all .4s;
+}
+
+.navbar2 nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fe5665;
+  left: 0;
+  bottom: -1px;
+  border-radius: 50rem;
+  z-index: -1;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.4s;
+  /* transform: scaleX(0);
+  transition: transform 0.3s;
+  transform-origin: right; */
+}
+
+.navbar2 nav a:hover {
+  color: #fff;
+}
+
+.navbar2 nav a:hover::after {
+  /* transform-origin: left;
+  transform: scaleX(1); */
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+/* ------------ NAVBAR 3 ---------------*/
+
+.navbar3 nav {
+  width: 100%;
+  background: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rem 50rem;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.navbar3 nav .logo{
+  color: #fff;
+  font-weight: 700;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.navbar3 nav .user{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 130px;
+}
+
+.navbar3 nav .user i{
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 15px 0 0;
+}
+
+.navbar3 nav a {
+  position: relative;
+  font-size: 15px;
+  color: #fff;
+  margin: 0 5px;
+  padding: 5px 15px;
+  z-index: 0;
+  transition: all .4s;
+  border-radius: 50rem;
+}
+
+.navbar3 nav a:hover {
+  color: #fff;
+  background: #7e2ffa;
+}
+

@@ -5,6 +5,7 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { LoadersComponent } from './components/loaders/loaders.component';
+import { NavbarsComponent } from './components/navbars/navbars.component';
 
 const appRoute: Routes = [
   { path: 'buttons', component: ButtonsComponent },
@@ -12,6 +13,7 @@ const appRoute: Routes = [
   { path: 'forms', component: FormsComponent },
   { path: 'loaders', component: LoadersComponent },
   { path: 'accordions', component: AccordionsComponent },
+  { path: 'navbars', component: NavbarsComponent },
 
   { path: '', redirectTo: '/sidebar', pathMatch: 'full' },
   { path: '**', component: ButtonsComponent },

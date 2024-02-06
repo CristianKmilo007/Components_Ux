@@ -156,11 +156,13 @@
 
 .form1 .card-container .front .flexbox .box:nth-child(1) {
   margin-right: auto;
+  text-align: start;
 }
 
 .form1 .card-container .front .flexbox .box {
   font-size: 15px;
   color: #fff;
+  text-align: end;
 }
 
 .form1 .card-container .back {
