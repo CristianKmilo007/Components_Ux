@@ -1,14 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
 }
 
-a{
+body::-webkit-scrollbar {
+    width: 5px;
+    background: #e4e9f7;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #1d1b31;
+    border-radius: 5px;
+}
+
+a {
     text-decoration: none;
     cursor: pointer;
 }

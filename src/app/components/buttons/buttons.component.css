@@ -11,6 +11,18 @@
   border-radius: 30px;
 }
 
+.content{
+  gap: 20px;
+}
+
+.content-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
 @media (max-width: 1600px) {
   .items {
     width: 30%;
@@ -34,6 +46,15 @@
   .linear_grad {
     width: 250px;
   }
+
+  .content{
+    gap: 10px;
+  }
+
+  .content-title{
+    margin-bottom: 1.5rem;
+  }
+
 }
 
 /* ------------ BUTTON 1 ---------------*/
