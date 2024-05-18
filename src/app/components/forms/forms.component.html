@@ -1,13 +1,13 @@
 <section class="form-section">
-    <div class="d-flex flex-column justify-content-center align-items-center mb-5">
+    <div class="content-title">
         <h1 class="fw-semibold mb-3">Forms</h1>
         <div class="linear_grad"></div>
     </div>
 
-    <div class="content d-flex px-4 flex-wrap justify-content-between  text-center" style="gap: 20px;">
+    <div class="content d-flex flex-wrap justify-content-between  text-center">
 
         <!-- FORM 1 -->
-        <div class="items-forms form1 d-flex justify-content-center align-items-center" style="background: #131313;">
+        <div class="items-forms form1 d-flex justify-content-center align-items-center bg-trans" style="background: #131313;">
             <div class="card-container scale">
 
                 <div class="front">
@@ -44,19 +44,19 @@
             </div>
 
             <form action="">
-                <div class=" d-flex gap-3">
-                    <div class="inputBox w-50">
+                <div class=" d-flex gap-3 flex-column flex-md-column">
+                    <div class="inputBox w-100 w-md-50">
                         <span>card number</span>
                         <input type="text" maxlength="19" class="card-number-input"
                             onkeypress="return SoloNumbers(event)">
                     </div>
-                    <div class="inputBox w-50">
+                    <div class="inputBox w-100 w-md-50">
                         <span>card holder</span>
                         <input type="text" class="card-holder-input">
                     </div>
                 </div>
                 <div class="flexbox">
-                    <div class="inputBox">
+                    <div class="inputBox mt-3">
                         <span>expiration mm</span>
                         <select name="" id="" class="month-input">
                             <option value="month" selected disabled>month</option>
